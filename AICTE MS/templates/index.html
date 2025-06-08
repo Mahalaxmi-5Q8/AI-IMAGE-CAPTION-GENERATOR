@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Caption Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Caption Generator</h1>
+    <form id="uploadForm">
+      <input type="file" id="imageInput" name="image" accept=".jpg,.jpeg,.png" required>
+      <button type="submit">Generate Caption</button>
+    </form>
+    <img id="preview" src="#" alt="Image Preview" style="display:none;" />
+    <p id="caption"></p>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
